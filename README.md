@@ -157,7 +157,7 @@ Updata the number of your FASTA files in the script:`SBATCH --array=...`
 
 ## 7. Related Projects
 
-* **[ColabFold-Apptainer-DRAC](https://github.com/DongdongHou006/colabfold-apptainer-DRAC)**: Our standard ColabFold (v1.5.5) deployment workflow for DRAC clusters. It features a two-step workflow to bypass public server quota limits and resolve the "no-internet-access" restriction on the compute node.
+* **[colabFold-apptainer-DRAC](https://github.com/DongdongHou006/colabfold-apptainer-DRAC)**: Our standard ColabFold (v1.5.5) deployment workflow for DRAC clusters. It features a two-step workflow to bypass public server quota limits and resolve the "no-internet-access" restriction on the compute node.
 
 
 ---
