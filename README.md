@@ -24,7 +24,7 @@ alphafold2-apptainer-DRAC/
 
 All implementation details are in the `.def` and `.sh` files in this repo.
 
----
+
 
 ## 2. Requirements
 
@@ -39,7 +39,7 @@ On DRAC (e.g. Narval/Beluga/Cedar):
 
 Paths inside the scripts assume DRAC-style environment. Adjust for your project/account if needed.
 
----
+
 
 ## 3. Build the Apptainer image (`alphafold2.sif`)
 
@@ -87,7 +87,6 @@ After a successful build, you should see the image under your home directory:
 ls ~/alphafold2.sif
 ```
 
----
 
 ## 4. Run AlphaFold2 (single job)
 
@@ -121,7 +120,7 @@ Update in the script as needed:
 * `alphafold2.sif` paths
 * `--fasta_paths=...`
 
----
+
 
 ## 5. Run AlphaFold2 (Batch mode)
 
@@ -142,7 +141,7 @@ sbatch scripts/af2-container-batch.sh
 
 Updata the number of your FASTA files in the script:`SBATCH --array=...` 
 
----
+
 
 ## 6. Notes & troubleshooting
 
@@ -154,6 +153,13 @@ Updata the number of your FASTA files in the script:`SBATCH --array=...`
   * Invalid FASTA format (illegal characters, extra spaces)
 * If you modify `alphafold2.def` or core dependencies, rebuild `alphafold2.sif`.
 
----
 
+
+## 7. Related Projects
+
+* **[ColabFold-Apptainer-DRAC](https://github.com/DongdongHou006/colabfold-apptainer-DRAC)**: Our standard ColabFold (v1.5.5) deployment workflow for DRAC clusters. It features a two-step workflow to bypass public server quota limits and resolve the "no-internet-access" restriction on the compute node.
+
+
+---
 For internal use by DRAC users who need a reproducible AlphaFold2 Apptainer workflow.
+
